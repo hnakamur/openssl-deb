@@ -1,10 +1,11 @@
-openssl097 (0.9.7g-5) unstable; urgency=low
+openssl097 (0.9.7g-5) unstable; urgency=medium
 
   * Add the shlibs for libcrypto again, removed by accident.
   * Change priority of -dbg package to extra.
   * Remove the libssl0.9.7-dev package.
+  * Add security patch for CAN-2005-2969, setting urgency to medium.
 
- -- Kurt Roeckx <root@roeckx.be>  Wed, 12 Oct 2005 20:07:19 +0200
+ -- Kurt Roeckx <root@roeckx.be>  Wed, 12 Oct 2005 21:07:19 +0200
 
 openssl097 (0.9.7g-4) unstable; urgency=low
 
