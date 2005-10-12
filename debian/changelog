@@ -1,3 +1,10 @@
+openssl097 (0.9.7g-5) unstable; urgency=low
+
+  * Add the shlibs for libcrypto again, removed by accident.
+  * Change priority of -dbg package to extra.
+
+ -- Kurt Roeckx <root@roeckx.be>  Wed, 12 Oct 2005 20:07:19 +0200
+
 openssl097 (0.9.7g-4) unstable; urgency=low
 
   * Reintroduce openssl 0.9.7 source package to provide the old
