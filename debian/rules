@@ -91,7 +91,7 @@ binary-arch:	build
 	dh_testroot
 	dh_clean
 #	-rm -rf debian/tmp `find debian/* -type d`
-	install -d debian/tmp debian/libssl0.9.7 debian/libssl-dev
+	install -d debian/tmp debian/libssl0.9.7 debian/libssl0.9.7-dev
 #	cd debian/tmp && install -d `cat ../dirs`
 #	cd debian/libssl09 && install -d `cat ../libssl09.dirs`
 #	cd debian/libssl09-dev && install -d `cat ../libssl09-dev.dirs`
@@ -120,23 +120,19 @@ binary-arch:	build
 	mkdir -p debian/tmp/etc/ssl
 	mv debian/tmp/usr/lib/ssl/{certs,openssl.cnf,private} debian/tmp/etc/ssl/
 	ln -s /etc/ssl/{certs,openssl.cnf,private} debian/tmp/usr/lib/ssl/
-	cp -pf debian/tmp/usr/lib/libcrypto.so.* debian/libcrypto0.9.7-udeb/usr/lib/
 	cp -auv lib*.so* debian/tmp/usr/lib/
 #	cp -auv lib*.a debian/tmp/usr/lib/
 	for opt in $(OPTS); do set -xe; mkdir -p debian/tmp/usr/lib/$$opt; cp -auv $$opt/lib*.so* debian/tmp/usr/lib/$$opt/; done
 	install debian/copyright debian/libssl0.9.7/usr/share/doc/libssl0.9.7/
 	install debian/changelog debian/libssl0.9.7/usr/share/doc/libssl0.9.7/changelog.Debian
-	install debian/copyright debian/libssl-dev/usr/share/doc/libssl-dev/
-	install debian/changelog debian/libssl-dev/usr/share/doc/libssl-dev/changelog.Debian
-#	(cd debian/tmp/usr/doc/openssl/doc; for f in *.doc*; do mv "$$f" "$$(echo $$f | sed -e 's/doc/txt/')";done)
-#	(cd doc; for f in *; do install "$$f" ../debian/tmp/usr/share/doc/openssl/doc/"$$(echo $$f | sed -e 's/doc/txt/')";done)
+	install debian/copyright debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/
+	install debian/changelog debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/changelog.Debian
 #	debstd -u CHANGES* LICENSE README NEWS
 	dh_installdocs CHANGES.SSLeay LICENSE README NEWS debian/README.optimization
 	dh_installexamples
 	dh_installchangelogs CHANGES
 #	dh_installmenu
 #	dh_installcron
-	dh_installman -popenssl
 	dh_installdebconf
 #	dh_undocumented c_rehash.1
 	dh_movefiles
@@ -145,7 +141,6 @@ binary-arch:	build
 #	rmdir debian/tmp/usr/include
 #	for opt in $(OPTS); do set -xe; rm -fr debian/tmp/usr/lib/$$opt; done
 	dh_compress
-	chmod 700 debian/openssl/etc/ssl/private
 	dh_fixperms -X etc/ssl/private
 	dh_strip --dbg-package=libssl0.9.7
 	dh_perl -d

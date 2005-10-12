@@ -1,3 +1,14 @@
+openssl097 (0.9.7g-4) unstable; urgency=low
+
+  * Reintroduce openssl 0.9.7 source package to provide the old
+    library version. This should make packages linked against
+    the old version installable again. (Closes: #332892)
+  * Drop the openssl and libcrypto0.9.7-udeb package.
+  * Rename libssl-dev to libssl0.9.7-dev.
+  * Add myself to the Uploaders field.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 10 Oct 2005 18:38:30 +0200
+
 openssl (0.9.7g-3) unstable; urgency=low
 
   * change Configure line for debian-freebsd-i386 to debian-kfreebsd-i386
