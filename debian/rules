@@ -91,7 +91,7 @@ binary-arch:	build
 	dh_testroot
 	dh_clean
 #	-rm -rf debian/tmp `find debian/* -type d`
-	install -d debian/tmp debian/libssl0.9.7 debian/libssl0.9.7-dev
+#	install -d debian/tmp debian/libssl0.9.7 debian/libssl0.9.7-dev
 #	cd debian/tmp && install -d `cat ../dirs`
 #	cd debian/libssl09 && install -d `cat ../libssl09.dirs`
 #	cd debian/libssl09-dev && install -d `cat ../libssl09-dev.dirs`
@@ -125,8 +125,8 @@ binary-arch:	build
 	for opt in $(OPTS); do set -xe; mkdir -p debian/tmp/usr/lib/$$opt; cp -auv $$opt/lib*.so* debian/tmp/usr/lib/$$opt/; done
 	install debian/copyright debian/libssl0.9.7/usr/share/doc/libssl0.9.7/
 	install debian/changelog debian/libssl0.9.7/usr/share/doc/libssl0.9.7/changelog.Debian
-	install debian/copyright debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/
-	install debian/changelog debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/changelog.Debian
+#	install debian/copyright debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/
+#	install debian/changelog debian/libssl0.9.7-dev/usr/share/doc/libssl0.9.7-dev/changelog.Debian
 #	debstd -u CHANGES* LICENSE README NEWS
 	dh_installdocs CHANGES.SSLeay LICENSE README NEWS debian/README.optimization
 	dh_installexamples
