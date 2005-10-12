@@ -31,7 +31,7 @@ Description: SSL development libraries, header files and documentation
 
 Package: libssl0.9.7-dbg
 Section: libdevel
-Priority: optional
+Priority: extra
 Architecture: any
 Depends: libssl0.9.7 (= ${Source-Version})
 Description: Symbol tables for libssl and libcrypt
