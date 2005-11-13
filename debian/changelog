@@ -13,8 +13,12 @@ openssl (0.9.8a-4) unstable; urgency=low
   * Use -m64 instead of -bpowerpc64-linux on ppc64. (Closes: #335486)
   * Make powerpc and ppc64 use the assembler version for bn.  ppc64
     had the location in the string wrong, powerpc had it missing.
+  * Add includes for stddef to get size_t in md2.h, md4.h, md5.h,
+    ripemd.h and sha.h.  (Closes: #333101)
+  * Run make test for each of the versions we build, make it 
+    not fail the build process if an error is found.
 
- -- Kurt Roeckx <kurt@roeckx.be>  Wed,  9 Nov 2005 22:05:39 +0100
+ -- Kurt Roeckx <kurt@roeckx.be>  Wed, 13 Nov 2005 16:01:05 +0100
 
 openssl (0.9.8a-3) unstable; urgency=high
 
