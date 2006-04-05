@@ -1,3 +1,29 @@
+openssl097 (0.9.7i-1) unstable; urgency=high
+
+  * New upstream release
+   * Remove the functionality of SSL_OP_MSIE_SSLV2_RSA_PADDING
+     (part of SSL_OP_ALL).  This option used to disable the
+     countermeasure against man-in-the-middle protocol-version
+     rollback in the SSL 2.0 server implementation, which is a bad
+     idea.  (CAN-2005-2969)
+   * For DSA signing, unless DSA_FLAG_NO_EXP_CONSTTIME is set, perform
+     the exponentiation using a fixed-length exponent.  (Otherwise,
+     the information leaked through timing could expose the secret key
+     after many signatures; cf. Bleichenbacher's attack on DSA with
+     biased k.)
+   * Make a new fixed-window mod_exp implementation the default for
+     RSA, DSA, and DH private-key operations so that the sequence of
+     squares and multiplies and the memory access pattern are
+     independent of the particular secret key.  This will mitigate
+     cache-timing and potential related attacks.
+   * Change the client implementation for SSLv23_method() and
+     SSLv23_client_method() so that is uses the SSL 3.0/TLS 1.0
+     Client Hello message format if the SSL_OP_NO_SSLv2 option is set.
+     (Previously, the SSL 2.0 backwards compatible Client Hello
+     message format would be used even with SSL_OP_NO_SSLv2.)
+
+ -- Christoph Martin <christoph.martin@uni-mainz.de>  Tue,  4 Apr 2006 10:39:20 +0200
+
 openssl097 (0.9.7g-5) unstable; urgency=medium
 
   * Add the shlibs for libcrypto again, removed by accident.
