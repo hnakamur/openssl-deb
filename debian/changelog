@@ -1,7 +1,11 @@
 openssl097 (0.9.7i-2) unstable; urgency=high
 
+  [ Kurt Roeckx ]
   * Fix RSA Signature Forgery (CVE-2006-4339) using patch provided
     by upstream.
+  
+  [ Christoph Martin ]
+  * Change priority of libssl0.9.7 to extra.
 
  -- Kurt Roeckx <kurt@roeckx.be>  Tue,  5 Sep 2006 19:59:47 +0000
 
