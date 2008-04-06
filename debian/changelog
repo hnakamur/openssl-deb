@@ -1,4 +1,4 @@
-openssl (0.9.8c-4etch2) stable-security; urgency=low
+openssl (0.9.8c-4etch2) proposed-updates; urgency=low
 
   * Apply patch from redhat for CVE-2007-4995.  This should also
     get DTLS in a working state.
