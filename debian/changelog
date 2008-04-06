@@ -1,9 +1,9 @@
 openssl (0.9.8c-4etch2) proposed-updates; urgency=low
 
-  * Apply patch from redhat for CVE-2007-4995.  This should also
+  * Apply patch from SuSe for CVE-2007-4995.  This should also
     get DTLS in a working state.
   * Fix CVE-2007-3108 wrong Montgomery multiplication.  This was
-    also included in the patch from redhat.  (Closes: #438142)
+    also included in the patch from SuSe.  (Closes: #438142)
 
  -- Kurt Roeckx <kurt@roeckx.be>  Sun, 06 Apr 2008 16:31:28 +0200
 
