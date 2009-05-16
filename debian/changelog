@@ -1,3 +1,10 @@
+openssl (0.9.8c-4etch5) oldstable-security; urgency=low
+
+  * Properly validate the length of an encoded BMPString and UniversalString
+    (CVE-2009-0590)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Wed, 01 Apr 2009 21:49:42 +0200
+
 openssl (0.9.8c-4etch4) stable-security; urgency=low
 
   * Internal calls to didn't properly check for errors which
