@@ -1,3 +1,10 @@
+openssl (0.9.8c-4etch3) stable-security; urgency=high
+
+  * Re-introducing seeding of the random number generator.  Patch from the
+    maintainer.
+
+ -- Florian Weimer <fw@deneb.enyo.de>  Thu, 08 May 2008 01:58:40 +0200
+
 openssl (0.9.8c-4etch2) proposed-updates; urgency=low
 
   * Apply patch from SuSe for CVE-2007-4995.  This should also
