@@ -1,3 +1,13 @@
+openssl (0.9.8c-4etch4) stable-security; urgency=low
+
+  * Internal calls to didn't properly check for errors which
+    resulted in malformed DSA and ECDSA signatures being treated as
+    a good signature rather than as an error.  (CVE-2008-5077)
+  * ipv6_from_asc() could write 1 byte longer than the buffer in case
+    the ipv6 address didn't have "::" part.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 05 Jan 2009 00:20:10 +0100
+
 openssl (0.9.8c-4etch3) stable-security; urgency=high
 
   * Re-introducing seeding of the random number generator.  Patch from the
