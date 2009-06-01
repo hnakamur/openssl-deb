@@ -1,3 +1,9 @@
+openssl (0.9.8c-4etch6) oldstable-security; urgency=low
+
+  * Fix "DTLS record buffer limitation bug." (CVE-2009-1377)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 01 Jun 2009 15:32:47 +0200
+
 openssl (0.9.8c-4etch5) oldstable-security; urgency=low
 
   * Properly validate the length of an encoded BMPString and UniversalString
