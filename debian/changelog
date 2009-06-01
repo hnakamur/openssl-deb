@@ -1,8 +1,9 @@
 openssl (0.9.8c-4etch6) oldstable-security; urgency=low
 
   * Fix "DTLS record buffer limitation bug." (CVE-2009-1377)
+  * Fix "DTLS fragment handling" (CVE-2009-1378)
 
- -- Kurt Roeckx <kurt@roeckx.be>  Mon, 01 Jun 2009 15:32:47 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 01 Jun 2009 15:35:41 +0200
 
 openssl (0.9.8c-4etch5) oldstable-security; urgency=low
 
