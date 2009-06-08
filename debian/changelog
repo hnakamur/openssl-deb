@@ -1,3 +1,10 @@
+openssl (0.9.8c-4etch7) oldstable-security; urgency=low
+
+  * Fix DoS via a DTLS ChangeCipherSpec packet that occurs before ClientHello
+    (CVE-2009-1386)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 08 Jun 2009 20:07:31 +0200
+
 openssl (0.9.8c-4etch6) oldstable-security; urgency=low
 
   * Fix "DTLS record buffer limitation bug." (CVE-2009-1377)
