@@ -1,3 +1,9 @@
+openssl (0.9.8o-4squeeze1) unstable; urgency=low
+
+  * Fix OCSP stapling parse error (CVE-2011-0014)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 10 Feb 2011 19:06:09 +0100
+
 openssl (0.9.8o-4) unstable; urgency=low
 
   * Fix CVE-2010-4180 (Closes: #529221)
