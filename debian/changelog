@@ -1,4 +1,4 @@
-openssl (0.9.8o-4squeeze1) unstable; urgency=low
+openssl (0.9.8o-4squeeze1) stable-security; urgency=low
 
   * Fix OCSP stapling parse error (CVE-2011-0014)
 
