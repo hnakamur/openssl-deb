@@ -1,8 +1,15 @@
-openssl (0.9.8o-4squeeze1) stable-security; urgency=low
+openssl098 (0.9.8o-6) unstable; urgency=low
+
+  * Upload as transitional openssl098 source package, just keeping
+    the library.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Wed, 23 Mar 2011 19:50:31 +0100
+
+openssl (0.9.8o-5) unstable; urgency=low
 
   * Fix OCSP stapling parse error (CVE-2011-0014)
 
- -- Kurt Roeckx <kurt@roeckx.be>  Thu, 10 Feb 2011 19:06:09 +0100
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 10 Feb 2011 20:43:43 +0100
 
 openssl (0.9.8o-4) unstable; urgency=low
 
