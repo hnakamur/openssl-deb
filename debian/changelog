@@ -1,3 +1,12 @@
+openssl (0.9.8o-4squeeze5) squeeze-security; urgency=low
+
+  * Fix CVE-2011-4108, CVE-2011-4109, CVE-2011-4576, CVE-2011-4619
+    and CVE-2011-4577
+  * Send alert instead of assertion failure for incorrectly formatted DTLS
+    fragments.  (Closes: #645805)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sat, 14 Jan 2012 22:23:53 +0100
+
 openssl (0.9.8o-4squeeze4) squeeze-security; urgency=high
 
   * Non-maintainer upload by the Security Team.

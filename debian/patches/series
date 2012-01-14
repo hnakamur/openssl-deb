@@ -26,3 +26,9 @@ block_diginotar.patch
 block_digicert_malaysia.patch
 CVE-2011-1945.patch
 CVE-2011-3210.patch
+CVE-2011-4108.patch
+CVE-2011-4109.patch
+CVE-2011-4619.patch
+CVE-2011-4576.patch
+CVE-2011-4577.patch
+dtls-fragment-alert.patch
