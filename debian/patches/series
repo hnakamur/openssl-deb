@@ -22,3 +22,7 @@ CVE-2010-2939.patch
 CVE-2010-3864.patch
 CVE-2010-4180.patch
 CVE-2011-0014.patch
+block_diginotar.patch
+block_digicert_malaysia.patch
+CVE-2011-1945.patch
+CVE-2011-3210.patch

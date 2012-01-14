@@ -1,3 +1,27 @@
+openssl (0.9.8o-4squeeze4) squeeze-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Block Malaysian's Digicert Sdn. Bhd. certificates by marking them
+    as revoked.
+
+ -- Raphael Geissert <geissert@debian.org>  Sun, 06 Nov 2011 11:24:18 -0600
+
+openssl (0.9.8o-4squeeze3) squeeze; urgency=low
+
+  * Non-maintainer upload by the Security Team.
+  * Fix CVE-2011-3210: SSL memory handling for (EC)DH ciphersuites
+
+ -- Raphael Geissert <geissert@debian.org>  Sat, 24 Sep 2011 18:57:14 -0500
+
+openssl (0.9.8o-4squeeze2) squeeze-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Block DigiNotar certificates
+  * Fix CVE-2011-1945: timing attacks against ECDHE_ECDSA makes
+    it easier to determine private keys.
+
+ -- Raphael Geissert <geissert@debian.org>  Mon, 12 Sep 2011 19:49:18 -0500
+
 openssl (0.9.8o-4squeeze1) stable-security; urgency=low
 
   * Fix OCSP stapling parse error (CVE-2011-0014)
