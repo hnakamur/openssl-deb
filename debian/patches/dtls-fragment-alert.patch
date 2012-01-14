@@ -1,8 +1,8 @@
-diff --git a/ssl/d1_both.c b/ssl/d1_both.c
-index 1c4158d..85f4d83 100644
---- a/ssl/d1_both.c
-+++ b/ssl/d1_both.c
-@@ -793,7 +793,13 @@ dtls1_get_message_fragment(SSL *s, int st1, int stn, long max, int *ok)
+Index: openssl-0.9.8o/ssl/d1_both.c
+===================================================================
+--- openssl-0.9.8o.orig/ssl/d1_both.c	2010-05-03 13:01:59.000000000 +0000
++++ openssl-0.9.8o/ssl/d1_both.c	2012-01-14 21:46:02.000000000 +0000
+@@ -806,7 +806,13 @@
  		*ok = 0;
  		return i;
  		}
@@ -17,7 +17,7 @@ index 1c4158d..85f4d83 100644
  
  	/* parse the message fragment header */
  	dtls1_get_message_header(wire, &msg_hdr);
-@@ -865,7 +871,12 @@ dtls1_get_message_fragment(SSL *s, int st1, int stn, long max, int *ok)
+@@ -876,7 +882,12 @@
  
  	/* XDTLS:  an incorrectly formatted fragment should cause the 
  	 * handshake to fail */
