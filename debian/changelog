@@ -1,3 +1,9 @@
+openssl (0.9.8o-4squeeze6) squeeze-security; urgency=low
+
+  * Fix CVE-2012-0050
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Wed, 18 Jan 2012 20:59:12 +0100
+
 openssl (0.9.8o-4squeeze5) squeeze-security; urgency=low
 
   * Fix CVE-2011-4108, CVE-2011-4109, CVE-2011-4576, CVE-2011-4619
