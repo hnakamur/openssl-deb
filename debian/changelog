@@ -1,3 +1,9 @@
+openssl (0.9.8o-4squeeze9) squeeze-security; urgency=low
+
+  * Fix CVE-2012-1165
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sat, 17 Mar 2012 15:56:07 +0100
+
 openssl (0.9.8o-4squeeze8) squeeze-security; urgency=low
 
   * Fix CVE-2012-0884

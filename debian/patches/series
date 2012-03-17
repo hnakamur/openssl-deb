@@ -34,3 +34,4 @@ CVE-2011-4577.patch
 dtls-fragment-alert.patch
 CVE-2012-0050.patch
 CVE-2012-0884.patch
+CVE-2012-1165.patch
