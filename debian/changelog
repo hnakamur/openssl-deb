@@ -1,3 +1,9 @@
+openssl (0.9.8o-4squeeze11) squeeze-security; urgency=low
+
+  * Really apply CVE-2012-2110
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 19 Apr 2012 21:12:34 +0200
+
 openssl (0.9.8o-4squeeze10) squeeze-security; urgency=low
 
   * Fix CVE-2012-2110
