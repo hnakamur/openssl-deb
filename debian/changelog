@@ -1,6 +1,8 @@
 openssl (0.9.8o-4squeeze10) squeeze-security; urgency=low
 
   * Fix CVE-2012-2110
+  * update CVE-2012-0884 patch to include detecting symmetric crypto errors
+    in PKCS7_decrypt
 
  -- Kurt Roeckx <kurt@roeckx.be>  Thu, 19 Apr 2012 20:30:38 +0200
 
