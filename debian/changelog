@@ -1,3 +1,17 @@
+openssl (0.9.8o-4squeeze13) squeeze-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix CVE-2012-2333: DoS via explicit IV in DTLS
+
+ -- Raphael Geissert <geissert@debian.org>  Wed, 16 May 2012 16:39:28 -0500
+
+openssl (0.9.8o-4squeeze12) squeeze-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix CVE-2012-2131: incomplete fix of CVE-2012-2110
+
+ -- Raphael Geissert <geissert@debian.org>  Tue, 24 Apr 2012 16:41:03 -0500
+
 openssl (0.9.8o-4squeeze11) squeeze-security; urgency=low
 
   * Really apply CVE-2012-2110
