@@ -4,6 +4,7 @@ openssl (1.0.1e-2+deb7u1) stable-security; urgency=medium
   * Fix CVE-2013-6450
   * disable rdrand by default.  It was used as only source of entropy when
     available. (Closes: #732710)
+  * Disable Dual EC DRBG.
 
  -- Kurt Roeckx <kurt@roeckx.be>  Mon, 23 Dec 2013 17:47:19 +0100
 

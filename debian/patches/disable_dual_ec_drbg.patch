@@ -1,0 +1,59 @@
+From: "Dr. Stephen Henson" <steve@openssl.org>
+Date: Mon, 16 Sep 2013 05:23:44 +0100
+Subject: [PATCH] Disable Dual EC DRBG.
+Origin: upstream, commit:a4870de5aaef562c0947494b410a2387f3a6d04d
+
+Return an error if an attempt is made to enable the Dual EC DRBG: it
+is not used by default.
+---
+ crypto/rand/rand.h     | 1 +
+ crypto/rand/rand_err.c | 1 +
+ crypto/rand/rand_lib.c | 8 ++++++++
+ 3 files changed, 10 insertions(+)
+
+diff --git a/crypto/rand/rand.h b/crypto/rand/rand.h
+index dc8fcf9..bb5520e 100644
+--- a/crypto/rand/rand.h
++++ b/crypto/rand/rand.h
+@@ -138,6 +138,7 @@ void ERR_load_RAND_strings(void);
+ #define RAND_F_SSLEAY_RAND_BYTES			 100
+ 
+ /* Reason codes. */
++#define RAND_R_DUAL_EC_DRBG_DISABLED			 104
+ #define RAND_R_ERROR_INITIALISING_DRBG			 102
+ #define RAND_R_ERROR_INSTANTIATING_DRBG			 103
+ #define RAND_R_NO_FIPS_RANDOM_METHOD_SET		 101
+diff --git a/crypto/rand/rand_err.c b/crypto/rand/rand_err.c
+index b8586c8..c4c80fc 100644
+--- a/crypto/rand/rand_err.c
++++ b/crypto/rand/rand_err.c
+@@ -78,6 +78,7 @@ static ERR_STRING_DATA RAND_str_functs[]=
+ 
+ static ERR_STRING_DATA RAND_str_reasons[]=
+ 	{
++{ERR_REASON(RAND_R_DUAL_EC_DRBG_DISABLED),"dual ec drbg disabled"},
+ {ERR_REASON(RAND_R_ERROR_INITIALISING_DRBG),"error initialising drbg"},
+ {ERR_REASON(RAND_R_ERROR_INSTANTIATING_DRBG),"error instantiating drbg"},
+ {ERR_REASON(RAND_R_NO_FIPS_RANDOM_METHOD_SET),"no fips random method set"},
+diff --git a/crypto/rand/rand_lib.c b/crypto/rand/rand_lib.c
+index 476a0cd..5ac0e14 100644
+--- a/crypto/rand/rand_lib.c
++++ b/crypto/rand/rand_lib.c
+@@ -269,6 +269,14 @@ int RAND_init_fips(void)
+ 	DRBG_CTX *dctx;
+ 	size_t plen;
+ 	unsigned char pers[32], *p;
++#ifndef OPENSSL_ALLOW_DUAL_EC_DRBG
++	if (fips_drbg_type >> 16)
++		{
++		RANDerr(RAND_F_RAND_INIT_FIPS, RAND_R_DUAL_EC_DRBG_DISABLED);
++		return 0;
++		}
++#endif
++		
+ 	dctx = FIPS_get_default_drbg();
+         if (FIPS_drbg_init(dctx, fips_drbg_type, fips_drbg_flags) <= 0)
+ 		{
+-- 
+1.8.5.1
+
