@@ -38,3 +38,4 @@ dtls_version.patch
 get_certificate.patch
 CVE-2013-6449.patch
 CVE-2013-6450.patch
+disable_rdrand.patch
