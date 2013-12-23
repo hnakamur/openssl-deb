@@ -36,3 +36,4 @@ cpuid.patch
 aesni-mac.patch
 dtls_version.patch
 get_certificate.patch
+CVE-2013-6449.patch
