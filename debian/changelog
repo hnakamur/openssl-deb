@@ -1,3 +1,10 @@
+openssl (1.0.1e-2+deb7u2) stable-security; urgency=medium
+
+  * The patch we applied for CVE-2013-6450 was missing a commit causing
+    crashes.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 06 Jan 2014 18:17:13 +0100
+
 openssl (1.0.1e-2+deb7u1) stable-security; urgency=medium
 
   * Fix CVE-2013-6449 (Closes: #732754)
