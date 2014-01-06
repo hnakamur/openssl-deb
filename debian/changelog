@@ -1,7 +1,9 @@
 openssl (1.0.1e-2+deb7u2) stable-security; urgency=medium
 
-  * The patch we applied for CVE-2013-6450 was missing a commit causing
-    crashes.
+  * The patch we applied for CVE-2013-6450 was causing segfaults,
+    also apply the previous commit checking for NULL in
+    EVP_MD_CTX_destroy()
+  * Fix for TLS record tampering bug CVE-2013-4353
 
  -- Kurt Roeckx <kurt@roeckx.be>  Mon, 06 Jan 2014 18:17:13 +0100
 
