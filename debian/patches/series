@@ -41,3 +41,4 @@ CVE-2013-6450.patch
 disable_rdrand.patch
 disable_dual_ec_drbg.patch
 CVE-2013-4353.patch
+dont_change_version.patch

@@ -1,3 +1,9 @@
+openssl (1.0.1e-2+deb7u3) stable-security; urgency=medium
+
+  * Don't change version number if session established
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 06 Jan 2014 20:28:20 +0100
+
 openssl (1.0.1e-2+deb7u2) stable-security; urgency=medium
 
   * The patch we applied for CVE-2013-6450 was causing segfaults,
