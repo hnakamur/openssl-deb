@@ -1,8 +1,10 @@
 openssl (1.0.1e-2+deb7u4) stable-security; urgency=medium
 
   * enable ec_nistp_64_gcc_128 on *-amd64 (Closes: #698447)
+  * Enable assembler for the arm targets, and remove armeb.
+    Patch by Riku Voipio <riku.voipio@iki.fi> (Closes: #676533)
 
- -- Kurt Roeckx <kurt@roeckx.be>  Sat, 01 Feb 2014 21:24:34 +0100
+ -- Kurt Roeckx <kurt@roeckx.be>  Sat, 01 Feb 2014 21:25:20 +0100
 
 openssl (1.0.1e-2+deb7u3) stable-security; urgency=medium
 
