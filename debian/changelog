@@ -1,3 +1,16 @@
+openssl (1.0.2h-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Upload 1.0.2h to jessie backports
+  * Use patches from unstable: debian-targets.patch,
+    block_digicert_malaysia.patch, block_diginotar.patch,
+    c_rehash-compat.patch, debian-targets.patch
+  * Remove patches applied upstream: rehash-crt.patch, defaults.patch,
+    openssl_fix_for_x32.patch, ppc64el.patch, Update-S-MIME-certificates.patch
+  * Use patches before soname change: version-script.patch, engines-path.patch
+  * Remove openssl_buttons.* from the docs.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sat, 02 Jul 2016 16:18:33 +0200
+
 openssl (1.0.1t-1+deb8u3) jessie; urgency=medium
 
   * Fix length check for CRLs. (Closes: #826552)

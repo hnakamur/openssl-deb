@@ -8,7 +8,6 @@ no-rpath.patch
 no-symbolic.patch
 pic.patch
 valgrind.patch
-rehash-crt.patch
 shared-lib-ext.patch
 stddef.patch
 version-script.patch
@@ -16,8 +15,4 @@ c_rehash-compat.patch
 block_diginotar.patch
 block_digicert_malaysia.patch
 #padlock_conf.patch
-defaults.patch
-openssl_fix_for_x32.patch
-ppc64el.patch
-Update-S-MIME-certificates.patch
 Fix-name-length-limit-check.patch
