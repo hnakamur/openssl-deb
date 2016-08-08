@@ -1,3 +1,12 @@
+openssl (1.0.2h-1~bpo8+2) UNRELEASED; urgency=medium
+
+  * move the symbols SRP_VBASE_get1_by_user, SRP_user_pwd_free from
+    OPENSSL_1.0.2g to OPENSSL_1.0.1s in the version script (Closes: #833328).
+  * Enable asm optimisation for s390x. Patch by Dimitri John Ledkov.
+    (Closes: #833156).
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 08 Aug 2016 21:42:22 +0200
+
 openssl (1.0.2h-1~bpo8+1) jessie-backports; urgency=medium
 
   * Upload 1.0.2h to jessie backports
