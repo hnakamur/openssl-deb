@@ -14,4 +14,3 @@ c_rehash-compat.patch
 block_diginotar.patch
 block_digicert_malaysia.patch
 #padlock_conf.patch
-Fix-name-length-limit-check.patch
