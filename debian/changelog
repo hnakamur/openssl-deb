@@ -1,3 +1,36 @@
+openssl1.0 (1.0.2j-2) unstable; urgency=medium
+
+  * Provide an 1.0.2 version of the library for Stretch.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 27 Oct 2016 21:10:24 +0200
+
+openssl (1.0.2j-1) unstable; urgency=medium
+
+  * New upstream release
+    - Fixes CVE-2016-7052
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 26 Sep 2016 18:17:39 +0200
+
+openssl (1.0.2i-1) unstable; urgency=high
+
+  * New upstream version
+    - Fix CVE-2016-2177
+    - Fix CVE-2016-2178
+    - Fix CVE-2016-2179
+    - Fix CVE-2016-2180
+    - Fix CVE-2016-2181
+    - Fix CVE-2016-2182
+    - Fix CVE-2016-2183
+    - Fix CVE-2016-6302
+    - Fix CVE-2016-6303
+    - Fix CVE-2016-6304
+    - Fix CVE-2016-6306
+  * Drop ca.patch, option is now documented upstream
+  * Update engines-path.patch to also update the libcrypto.pc, now that that
+    has an enginesdir in it.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 22 Sep 2016 19:39:36 +0200
+
 openssl (1.0.2h-2) unstable; urgency=medium
 
   * Re-add libdoc-manpgs-pod-spell.patch to series files (Closes: #813191)
