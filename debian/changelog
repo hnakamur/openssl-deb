@@ -1,4 +1,4 @@
-openssl1.0 (1.0.2j-2) unstable; urgency=medium
+openssl1.0 (1.0.2j-2) experimental; urgency=medium
 
   * Provide an 1.0.2 version of the library for Stretch.
 
