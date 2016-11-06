@@ -1,3 +1,9 @@
+openssl1.0 (1.0.2j-4) unstable; urgency=medium
+
+  * Re-add udebs
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sun, 06 Nov 2016 12:07:19 +0100
+
 openssl1.0 (1.0.2j-3) unstable; urgency=medium
 
   * Upload to unstable
