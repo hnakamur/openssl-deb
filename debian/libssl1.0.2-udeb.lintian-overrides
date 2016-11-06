@@ -1,1 +1,1 @@
-libssl1.0.2-udeb binary: embedded-library
+libssl1.0.2-udeb udeb: embedded-library

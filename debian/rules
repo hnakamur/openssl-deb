@@ -146,6 +146,11 @@ binary-arch:	build install
 	install debian/changelog debian/libssl1.0-dev/usr/share/doc/libssl1.0-dev/changelog.Debian
 
 	dh_lintian -a
+	# dh_lintian skips udebs, copy it manually
+	mkdir -p debian/libcrypto1.0.2-udeb/usr/share/lintian/overrides
+	mkdir -p debian/libssl1.0.2-udeb/usr/share/lintian/overrides
+	cp debian/libcrypto1.0.2-udeb.lintian-overrides debian/libcrypto1.0.2-udeb/usr/share/lintian/overrides/libcrypto1.0.2-udeb
+	cp debian/libssl1.0.2-udeb.lintian-overrides debian/libssl1.0.2-udeb/usr/share/lintian/overrides/libssl1.0.2-udeb
 	dh_installdocs -a
 	dh_installexamples -a
 	dh_installchangelogs -a CHANGES
