@@ -1,3 +1,9 @@
+openssl1.0 (1.0.2j-5) UNRELEASED; urgency=medium
+
+  * Add myself as Uploader.
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 19 Dec 2016 21:57:14 +0100
+
 openssl1.0 (1.0.2j-4) unstable; urgency=medium
 
   * Re-add udebs
