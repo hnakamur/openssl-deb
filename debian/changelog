@@ -6,6 +6,7 @@ openssl1.0 (1.0.2j-5) UNRELEASED; urgency=medium
     (Closes: #736687).
   * Update Standards-Version, no change required.
   * Drop asm support for X32 because the testsuite segfaults.
+  * Limit the watchfile to the 1.0.2x series.
 
  -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 19 Dec 2016 21:57:14 +0100
 
