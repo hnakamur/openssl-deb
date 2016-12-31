@@ -1,4 +1,4 @@
-openssl1.0 (1.0.2j-5) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2j-5) unstable; urgency=medium
 
   * Add myself as Uploader.
   * Drop zlib1g-dev from libssl1.0-dev's deps (Closes: #845945).
@@ -7,8 +7,12 @@ openssl1.0 (1.0.2j-5) UNRELEASED; urgency=medium
   * Update Standards-Version, no change required.
   * Drop asm support for X32 because the testsuite segfaults.
   * Limit the watchfile to the 1.0.2x series.
+  * Redo rules file to newer debhelper syntax
+  * Add homepage filed
+  * Remove recommends for libssl-doc because the doc package from 1.1.0 is not
+    really matching the -dev package from 1.0.2
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 19 Dec 2016 21:57:14 +0100
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 31 Dec 2016 14:09:16 +0100
 
 openssl1.0 (1.0.2j-4) unstable; urgency=medium
 
