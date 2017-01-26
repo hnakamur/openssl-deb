@@ -1,3 +1,12 @@
+openssl1.0 (1.0.2k-1) unstable; urgency=medium
+
+  * New upstream release
+    - Fixes CVE-2017-3731
+    - Fixes CVE-2017-3732
+    - Fixes CVE-2016-7055
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Thu, 26 Jan 2017 16:39:16 +0100
+
 openssl1.0 (1.0.2j-5) unstable; urgency=medium
 
   * Add myself as Uploader.
