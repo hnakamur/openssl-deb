@@ -1,3 +1,11 @@
+openssl1.0 (1.0.2l-1) unstable; urgency=medium
+
+  * New upstream release
+    - Properly detect features on the AMD Ryzen processor (Closes: #861145)
+  * Refresh valgrind.patch
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 25 May 2017 22:53:57 +0200
+
 openssl1.0 (1.0.2k-1) unstable; urgency=medium
 
   * New upstream release
