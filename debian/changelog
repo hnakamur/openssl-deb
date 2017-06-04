@@ -1,3 +1,9 @@
+openssl1.0 (1.0.2l-2) unstable; urgency=medium
+
+  * Make the udeb use a versioned depends (Closes: #864081)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sun, 04 Jun 2017 19:15:33 +0200
+
 openssl1.0 (1.0.2l-1) unstable; urgency=medium
 
   * New upstream release
