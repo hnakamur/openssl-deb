@@ -1,10 +1,10 @@
-openssl (1.0.2l-1~bpo8+1) UNRELEASED; urgency=medium
+openssl (1.0.2l-1~bpo8+1) jessie-backports; urgency=medium
 
   * New upstream release
     - Properly detect features on the AMD Ryzen processor (Closes: #861145)
   * Refresh valgrind.patch
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Wed, 21 Jun 2017 21:13:54 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Wed, 21 Jun 2017 21:42:47 +0200
 
 openssl (1.0.2k-1~bpo8+1) jessie-backports; urgency=medium
 
