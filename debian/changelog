@@ -1,8 +1,9 @@
-openssl1.0 (1.0.2l-3) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2l-2+deb9u1) stretch-security; urgency=medium
 
-  * Add support for arm64ilp32, Patch by Wookey (Closes: #874709).
+  * Fix CVE-2017-3735
+  * Fix CVE-2017-3736
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 07 Oct 2017 11:35:29 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 02 Nov 2017 14:03:53 +0100
 
 openssl1.0 (1.0.2l-2) unstable; urgency=medium
 
