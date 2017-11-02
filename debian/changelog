@@ -1,8 +1,14 @@
-openssl1.0 (1.0.2l-3) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2m-1) unstable; urgency=high
 
+  [ Kurt Roeckx ]
+  * New upstream version
+    - Fixes CVE-2017-3735
+    - Fixes CVE-2017-3736
+
+  [ Sebastian Andrzej Siewior]
   * Add support for arm64ilp32, Patch by Wookey (Closes: #874709).
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 07 Oct 2017 11:35:29 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 02 Nov 2017 14:30:51 +0100
 
 openssl1.0 (1.0.2l-2) unstable; urgency=medium
 
