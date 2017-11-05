@@ -19,3 +19,4 @@ disable_sslv3_test.patch
 libdoc-manpgs-pod-spell.patch
 Mark-3DES-and-RC4-ciphers-as-weak.patch
 0001-Fix-no-ssl3-build.patch
+0001-aes-armv4-bsaes-armv7-sha256-armv4-.pl-make-it-work-.patch

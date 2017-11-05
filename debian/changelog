@@ -1,3 +1,9 @@
+openssl1.0 (1.0.2m-3) unstable; urgency=medium
+
+  * Avoid problems with aes and sha256 assembler on armhf using binutils 2.29
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sun, 05 Nov 2017 17:28:52 +0100
+
 openssl1.0 (1.0.2m-2) unstable; urgency=medium
 
   * Fix no-ssl3-method build
