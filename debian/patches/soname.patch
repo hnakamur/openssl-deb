@@ -1,7 +1,16 @@
-Index: openssl-1.0.2d/crypto/opensslv.h
+From: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Date: Tue, 12 Dec 2017 23:35:24 +0100
+Subject: soname
+
 ===================================================================
---- openssl-1.0.2d.orig/crypto/opensslv.h
-+++ openssl-1.0.2d/crypto/opensslv.h
+---
+ crypto/opensslv.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/crypto/opensslv.h b/crypto/opensslv.h
+index baee2d0865fd..a04e7defdbda 100644
+--- a/crypto/opensslv.h
++++ b/crypto/opensslv.h
 @@ -88,7 +88,7 @@ extern "C" {
   * should only keep the versions that are binary compatible with the current.
   */

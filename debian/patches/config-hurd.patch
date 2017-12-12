@@ -1,8 +1,17 @@
-Index: openssl-1.0.0c/config
+From: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Date: Tue, 12 Dec 2017 23:35:23 +0100
+Subject: config-hurd
+
 ===================================================================
---- openssl-1.0.0c.orig/config	2010-12-12 16:09:43.000000000 +0100
-+++ openssl-1.0.0c/config	2010-12-12 16:09:48.000000000 +0100
-@@ -170,8 +170,8 @@
+---
+ config | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/config b/config
+index 21534e00ba4a..fab663cc8222 100755
+--- a/config
++++ b/config
+@@ -170,8 +170,8 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${MACHINE}" in
  	echo "${MACHINE}-whatever-linux1"; exit 0
  	;;
  

@@ -1,8 +1,33 @@
-Index: openssl-1.0.2i/Makefile.org
+From: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Date: Tue, 12 Dec 2017 23:35:23 +0100
+Subject: engines-path
+
 ===================================================================
---- openssl-1.0.2i.orig/Makefile.org
-+++ openssl-1.0.2i/Makefile.org
-@@ -368,7 +368,7 @@ libcrypto.pc: Makefile
+---
+ Configure               |  2 +-
+ Makefile.org            |  4 ++--
+ engines/Makefile        | 10 +++++-----
+ engines/ccgost/Makefile |  8 ++++----
+ 4 files changed, 12 insertions(+), 12 deletions(-)
+
+diff --git a/Configure b/Configure
+index ecf12ae990c4..e5cdd2f03ef5 100755
+--- a/Configure
++++ b/Configure
+@@ -1980,7 +1980,7 @@ while (<IN>)
+ 		}
+ 	elsif	(/^#define\s+ENGINESDIR/)
+ 		{
+-		my $foo = "$prefix/$libdir/engines";
++		my $foo = "$prefix/$libdir/openssl-1.0.2/engines";
+ 		$foo =~ s/\\/\\\\/g;
+ 		print OUT "#define ENGINESDIR \"$foo\"\n";
+ 		}
+diff --git a/Makefile.org b/Makefile.org
+index f51f0a756c3e..aec7e577e0bc 100644
+--- a/Makefile.org
++++ b/Makefile.org
+@@ -369,7 +369,7 @@ libcrypto.pc: Makefile
  	    echo 'exec_prefix=$${prefix}'; \
  	    echo 'libdir=$${exec_prefix}/$(LIBDIR)'; \
  	    echo 'includedir=$${prefix}/include'; \
@@ -11,7 +36,7 @@ Index: openssl-1.0.2i/Makefile.org
  	    echo ''; \
  	    echo 'Name: OpenSSL-libcrypto'; \
  	    echo 'Description: OpenSSL cryptography library'; \
-@@ -536,7 +536,7 @@ install: all install_docs install_sw
+@@ -545,7 +545,7 @@ install: all install_docs install_sw
  install_sw:
  	@$(PERL) $(TOP)/util/mkdir-p.pl $(INSTALL_PREFIX)$(INSTALLTOP)/bin \
  		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR) \
@@ -20,11 +45,11 @@ Index: openssl-1.0.2i/Makefile.org
  		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR)/pkgconfig \
  		$(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl \
  		$(INSTALL_PREFIX)$(OPENSSLDIR)/misc \
-Index: openssl-1.0.2i/engines/Makefile
-===================================================================
---- openssl-1.0.2i.orig/engines/Makefile
-+++ openssl-1.0.2i/engines/Makefile
-@@ -107,13 +107,13 @@ install:
+diff --git a/engines/Makefile b/engines/Makefile
+index 2058ff405afe..df7def6174fd 100644
+--- a/engines/Makefile
++++ b/engines/Makefile
+@@ -107,13 +107,13 @@ lib:	$(LIBOBJ)
  	@[ -n "$(INSTALLTOP)" ] # should be set by top Makefile...
  	@if [ -n "$(SHARED_LIBS)" ]; then \
  		set -e; \
@@ -40,7 +65,7 @@ Index: openssl-1.0.2i/engines/Makefile
  			  else \
  				case "$(CFLAGS)" in \
  				*DSO_BEOS*)	sfx=".so";;	\
-@@ -122,10 +122,10 @@ install:
+@@ -122,10 +122,10 @@ lib:	$(LIBOBJ)
  				*DSO_WIN32*)	sfx="eay32.dll"; pfx=;;	\
  				*)		sfx=".bad";;	\
  				esac; \
@@ -54,24 +79,11 @@ Index: openssl-1.0.2i/engines/Makefile
  		done; \
  	fi
  	@target=install; $(RECURSIVE_MAKE)
-Index: openssl-1.0.2i/Configure
-===================================================================
---- openssl-1.0.2i.orig/Configure
-+++ openssl-1.0.2i/Configure
-@@ -1969,7 +1969,7 @@ while (<IN>)
- 		}
- 	elsif	(/^#define\s+ENGINESDIR/)
- 		{
--		my $foo = "$prefix/$libdir/engines";
-+		my $foo = "$prefix/$libdir/openssl-1.0.2/engines";
- 		$foo =~ s/\\/\\\\/g;
- 		print OUT "#define ENGINESDIR \"$foo\"\n";
- 		}
-Index: openssl-1.0.2i/engines/ccgost/Makefile
-===================================================================
---- openssl-1.0.2i.orig/engines/ccgost/Makefile
-+++ openssl-1.0.2i/engines/ccgost/Makefile
-@@ -47,7 +47,7 @@ install:
+diff --git a/engines/ccgost/Makefile b/engines/ccgost/Makefile
+index f378530c8642..b42a64162730 100644
+--- a/engines/ccgost/Makefile
++++ b/engines/ccgost/Makefile
+@@ -47,7 +47,7 @@ lib: $(LIBOBJ)
  		pfx=lib; \
  		if expr "$(PLATFORM)" : "Cygwin" >/dev/null; then \
  			sfx=".so"; \
@@ -80,7 +92,7 @@ Index: openssl-1.0.2i/engines/ccgost/Makefile
  		else \
  			case "$(CFLAGS)" in \
  			*DSO_BEOS*) sfx=".so";; \
-@@ -56,10 +56,10 @@ install:
+@@ -56,10 +56,10 @@ lib: $(LIBOBJ)
  			*DSO_WIN32*) sfx="eay32.dll"; pfx=;; \
  			*) sfx=".bad";; \
  			esac; \
