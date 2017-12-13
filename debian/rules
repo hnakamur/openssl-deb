@@ -130,8 +130,7 @@ override_dh_installchangelogs:
 	dh_installchangelogs -a CHANGES
 
 override_dh_makeshlibs:
-	#dpkg-gensymbols -Pdebian/libssl1.0.2/ -plibssl1.0.2 -c4
-	dh_makeshlibs -a -V --add-udeb="libcrypto1.0.2-udeb" -Xengines
+	dh_makeshlibs -a -V --add-udeb="libcrypto1.0.2-udeb" -Xengines -- -c4
 
 override_dh_shlibdeps:
 	sed -i '/^udeb: libssl/s/libcrypto1.0.2-udeb/libssl1.0.2-udeb/' debian/libssl1.0.2/DEBIAN/shlibs
