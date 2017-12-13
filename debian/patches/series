@@ -20,3 +20,6 @@ libdoc-manpgs-pod-spell.patch
 Mark-3DES-and-RC4-ciphers-as-weak.patch
 CVE-2017-3735.patch
 CVE-2017-3736.patch
+Don-t-allow-read-write-after-fatal-error.patch
+Add-a-test-for-CVE-2017-3737.patch
+bn-asm-rsaz-avx2.pl-fix-digit-correction-bug-in-rsaz_1024.patch
