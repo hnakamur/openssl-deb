@@ -1,4 +1,4 @@
-openssl1.0 (1.0.2n-1) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2n-1) unstable; urgency=medium
 
   * New upstream version 1.0.2n
     - drop patches which applied upstream:
@@ -10,7 +10,7 @@ openssl1.0 (1.0.2n-1) UNRELEASED; urgency=medium
   * Abort the build if symbols are discovered which are not part of the
     symbols file.
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 12 Dec 2017 23:51:59 +0100
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Wed, 13 Dec 2017 23:47:09 +0100
 
 openssl1.0 (1.0.2m-3) unstable; urgency=medium
 
