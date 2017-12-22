@@ -1,17 +1,12 @@
-openssl1.0 (1.0.2l-2+deb9u2) stretch-security; urgency=high
+openssl (1.0.2l-2+deb9u2~bpo8+1) jessie-backports; urgency=medium
 
+  * Fix CVE-2017-3735
+  * Fix CVE-2017-3736
   * CVE-2017-3737 (Read/write after SSL object in error state)
   * Add a testcase for CVE-2017-3737
   * CVE-2017-3738 (rsaz_1024_mul_avx2 overflow bug on x86_64)
 
  -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Wed, 13 Dec 2017 23:09:47 +0100
-
-openssl1.0 (1.0.2l-2+deb9u1) stretch-security; urgency=medium
-
-  * Fix CVE-2017-3735
-  * Fix CVE-2017-3736
-
- -- Kurt Roeckx <kurt@roeckx.be>  Thu, 02 Nov 2017 14:03:53 +0100
 
 openssl (1.0.2l-1~bpo8+1) jessie-backports; urgency=medium
 
