@@ -1,9 +1,9 @@
-openssl1.0 (1.0.2l-2+deb9u3) stretch-security; urgency=medium
+openssl1.0 (1.0.2l-2+deb9u3) stretch-security; urgency=high
 
   * CVE-2018-0739 (Constructed ASN.1 types with a recursive definition could
     exceed the stack)
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 27 Mar 2018 21:42:08 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Thu, 29 Mar 2018 13:10:14 +0200
 
 openssl1.0 (1.0.2l-2+deb9u2) stretch-security; urgency=high
 
