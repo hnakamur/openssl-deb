@@ -1,4 +1,4 @@
-openssl (1.1.0f-3+deb9u2) UNRELEASED; urgency=medium
+openssl (1.1.0f-3+deb9u2) stretch-security; urgency=high
 
   * CVE-2017-3738 (rsaz_1024_mul_avx2 overflow bug on x86_64)
   * CVE-2018-0733 (Incorrect CRYPTO_memcmp on HP-UX PA-RISC)
@@ -8,7 +8,7 @@ openssl (1.1.0f-3+deb9u2) UNRELEASED; urgency=medium
     - Fix-a-Proxy-race-condition.patch
     - Fix-race-condition-in-TLSProxy.patch
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 27 Mar 2018 22:10:51 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Thu, 29 Mar 2018 12:51:02 +0200
 
 openssl (1.1.0f-3+deb9u1) stretch-security; urgency=medium
 
