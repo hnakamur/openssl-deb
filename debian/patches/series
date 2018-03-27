@@ -23,3 +23,4 @@ CVE-2017-3736.patch
 Don-t-allow-read-write-after-fatal-error.patch
 Add-a-test-for-CVE-2017-3737.patch
 bn-asm-rsaz-avx2.pl-fix-digit-correction-bug-in-rsaz_1024.patch
+Limit-ASN.1-constructed-types-recursive-definition-d.patch
