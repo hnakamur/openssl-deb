@@ -4,6 +4,9 @@ openssl (1.1.0f-3+deb9u2) UNRELEASED; urgency=medium
   * CVE-2018-0733 (Incorrect CRYPTO_memcmp on HP-UX PA-RISC)
   * CVE-2018-0739 (Constructed ASN.1 types with a recursive definition could
     exceed the stack)
+  * Add patches to pass the testsuite:
+    - Fix-a-Proxy-race-condition.patch
+    - Fix-race-condition-in-TLSProxy.patch
 
  -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 27 Mar 2018 22:10:51 +0200
 
