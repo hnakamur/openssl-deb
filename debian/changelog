@@ -1,3 +1,10 @@
+openssl (1.1.0f-3+deb9u1) stretch-security; urgency=medium
+
+  * Fix CVE-2017-3735
+  * Fix CVE-2017-3736
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 02 Nov 2017 12:29:36 +0100
+
 openssl (1.1.0f-3) unstable; urgency=medium
 
   * Don't cleanup a thread-local key we didn't create it (Closes: #863707)
