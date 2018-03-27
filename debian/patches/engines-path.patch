@@ -11,10 +11,10 @@ Subject: engines-path
  4 files changed, 12 insertions(+), 12 deletions(-)
 
 diff --git a/Configure b/Configure
-index 5af5ad0cde89..91138fb88384 100755
+index af3914285616..186140ea20b6 100755
 --- a/Configure
 +++ b/Configure
-@@ -1981,7 +1981,7 @@ while (<IN>)
+@@ -1987,7 +1987,7 @@ while (<IN>)
  		}
  	elsif	(/^#define\s+ENGINESDIR/)
  		{

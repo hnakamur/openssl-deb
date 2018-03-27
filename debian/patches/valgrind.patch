@@ -8,7 +8,7 @@ Subject: valgrind
  1 file changed, 2 insertions(+)
 
 diff --git a/crypto/rand/md_rand.c b/crypto/rand/md_rand.c
-index 29e465b07524..ce602cb403b1 100644
+index a7af9f9d8671..d07ab8801c55 100644
 --- a/crypto/rand/md_rand.c
 +++ b/crypto/rand/md_rand.c
 @@ -490,6 +490,7 @@ int ssleay_rand_bytes(unsigned char *buf, int num, int pseudo, int lock)

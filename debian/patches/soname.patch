@@ -8,7 +8,7 @@ Subject: soname
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/crypto/opensslv.h b/crypto/opensslv.h
-index baee2d0865fd..a04e7defdbda 100644
+index 77f124e2cb3c..4d4e1f811634 100644
 --- a/crypto/opensslv.h
 +++ b/crypto/opensslv.h
 @@ -88,7 +88,7 @@ extern "C" {

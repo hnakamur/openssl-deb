@@ -1,8 +1,11 @@
-openssl1.0 (1.0.2n-2) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2o-1) unstable; urgency=medium
 
   * Add riscv64 (Closes: #891799).
+  * New upstream version 1.0.2o:
+    - Fixes CVE-2018-0739 (Constructed ASN.1 types with a recursive definition
+            could exceed the stack)
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 26 Mar 2018 20:52:43 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 27 Mar 2018 21:10:52 +0200
 
 openssl1.0 (1.0.2n-1) unstable; urgency=medium
 
