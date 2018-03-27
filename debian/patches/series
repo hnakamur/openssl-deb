@@ -7,3 +7,6 @@ c_rehash-compat.patch
 0001-Only-release-thread-local-key-if-we-created-it.patch
 CVE-2017-3735.patch
 CVE-2017-3736.patch
+bn-asm-rsaz-avx2.pl-fix-digit-correction-bug-in-rsaz.patch
+Limit-ASN.1-constructed-types-recursive-definition-d.patch
+pariscid.pl-fix-nasty-typo-in-CRYPTO_memcmp.patch
