@@ -11,7 +11,7 @@ Subject: engines-path
  4 files changed, 12 insertions(+), 12 deletions(-)
 
 diff --git a/Configure b/Configure
-index af3914285616..186140ea20b6 100755
+index 309c98de6351..76b5530b8bab 100755
 --- a/Configure
 +++ b/Configure
 @@ -1987,7 +1987,7 @@ while (<IN>)
