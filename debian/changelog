@@ -5,6 +5,7 @@ openssl (1.1.0i-1~deb9u1) stretch; urgency=medium
     - Fix commandline option for CAengine (Closes: #907457)
   * Abort the build if symbols are discovered which are not part of the
     symbols file.
+  * use signing-key.asc and a https links for downloads
 
  -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 03 Sep 2018 23:59:02 +0200
 
