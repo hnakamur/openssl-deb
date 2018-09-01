@@ -1,7 +1,15 @@
----
- Configurations/20-debian.conf |  137 ++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 137 insertions(+)
+From: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Date: Sat, 1 Sep 2018 22:20:24 +0200
+Subject: debian-targets
 
+---
+ Configurations/20-debian.conf | 137 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 137 insertions(+)
+ create mode 100644 Configurations/20-debian.conf
+
+diff --git a/Configurations/20-debian.conf b/Configurations/20-debian.conf
+new file mode 100644
+index 0000000..c56a61a
 --- /dev/null
 +++ b/Configurations/20-debian.conf
 @@ -0,0 +1,137 @@

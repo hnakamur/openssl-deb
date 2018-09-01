@@ -3,10 +3,12 @@ Date: Sun, 5 Nov 2017 15:09:09 +0100
 Subject: man-section
 
 ---
- Configurations/unix-Makefile.tmpl |    6 ++++--
- util/process_docs.pl              |    3 ++-
+ Configurations/unix-Makefile.tmpl | 6 ++++--
+ util/process_docs.pl              | 3 ++-
  2 files changed, 6 insertions(+), 3 deletions(-)
 
+diff --git a/Configurations/unix-Makefile.tmpl b/Configurations/unix-Makefile.tmpl
+index 034d93e..9af91c6 100644
 --- a/Configurations/unix-Makefile.tmpl
 +++ b/Configurations/unix-Makefile.tmpl
 @@ -167,7 +167,8 @@ HTMLDIR=$(DOCDIR)/html
@@ -19,7 +21,7 @@ Subject: man-section
  HTMLSUFFIX=html
  
  
-@@ -562,7 +563,8 @@ uninstall_docs: uninstall_man_docs unins
+@@ -562,7 +563,8 @@ uninstall_docs: uninstall_man_docs uninstall_html_docs
  	@[ -n "$(INSTALLTOP)" ] || (echo INSTALLTOP should not be empty; exit 1)
  	@echo "*** Installing manpages"
  	$(PERL) $(SRCDIR)/util/process_docs.pl \
@@ -29,6 +31,8 @@ Subject: man-section
  
  uninstall_man_docs:
  	@echo "*** Uninstalling manpages"
+diff --git a/util/process_docs.pl b/util/process_docs.pl
+index f7daef0..5209c3e 100755
 --- a/util/process_docs.pl
 +++ b/util/process_docs.pl
 @@ -38,6 +38,7 @@ GetOptions(\%options,
@@ -39,7 +43,7 @@ Subject: man-section
             'remove',            # To remove files rather than writing them
             'dry-run|n',         # Only output file names on STDOUT
             'debug|D+',
-@@ -100,7 +101,7 @@ foreach my $subdir (keys %{$options{subd
+@@ -100,7 +101,7 @@ foreach my $subdir (keys %{$options{subdir}}) {
          my $name = uc $podname;
          my $suffix = { man  => ".$podinfo{section}".($options{suffix} // ""),
                         html => ".html" } -> {$options{type}};
