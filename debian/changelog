@@ -3,6 +3,8 @@ openssl (1.1.0i-1~deb9u1) UNRELEASED; urgency=medium
   * Import 1.1.0i
     - Fix segfault ERR_clear_error (Closes: #903566)
     - Fix commandline option for CAengine (Closes: #907457)
+  * Abort the build if symbols are discovered which are not part of the
+    symbols file.
 
  -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 01 Sep 2018 22:21:29 +0200
 
