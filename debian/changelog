@@ -1,4 +1,4 @@
-openssl (1.1.0i-1~deb9u1) UNRELEASED; urgency=medium
+openssl (1.1.0i-1~deb9u1) stretch; urgency=medium
 
   * Import 1.1.0i
     - Fix segfault ERR_clear_error (Closes: #903566)
@@ -6,7 +6,7 @@ openssl (1.1.0i-1~deb9u1) UNRELEASED; urgency=medium
   * Abort the build if symbols are discovered which are not part of the
     symbols file.
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 01 Sep 2018 22:21:29 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Mon, 03 Sep 2018 23:59:02 +0200
 
 openssl (1.1.0f-3+deb9u2) stretch-security; urgency=high
 
