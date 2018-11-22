@@ -1,4 +1,4 @@
-openssl1.0 (1.0.2q-1) UNRELEASED; urgency=medium
+openssl1.0 (1.0.2q-1) unstable; urgency=medium
 
   * Correct typo in the riscv64 target (Closes: #891799).
   * Update to policy 4.1.4
@@ -13,7 +13,7 @@ openssl1.0 (1.0.2q-1) UNRELEASED; urgency=medium
     - CVE-2018-0737 (Cache timing vulnerability in RSA Key Generation)
       (Closes: #895845)
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Tue, 03 Apr 2018 22:11:38 +0200
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Thu, 22 Nov 2018 22:06:24 +0100
 
 openssl1.0 (1.0.2o-1) unstable; urgency=medium
 
