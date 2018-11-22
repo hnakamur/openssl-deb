@@ -7,7 +7,7 @@ Subject: debian-targets
  1 file changed, 56 insertions(+)
 
 diff --git a/Configure b/Configure
-index 744b493b96f6..309c98de6351 100755
+index c7066dc97c58..79b7d5c90d8e 100755
 --- a/Configure
 +++ b/Configure
 @@ -133,6 +133,10 @@ my $clang_devteam_warn = "-Wno-unused-parameter -Wno-missing-field-initializers

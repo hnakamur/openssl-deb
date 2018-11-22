@@ -12,7 +12,7 @@ test.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/test/testssl b/test/testssl
-index 21bc4d81400e..59492e7cf7d7 100644
+index 8bea40a4ce9c..63c72620fd73 100644
 --- a/test/testssl
 +++ b/test/testssl
 @@ -160,7 +160,7 @@ test_cipher() {
