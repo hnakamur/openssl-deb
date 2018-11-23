@@ -36,6 +36,7 @@ ifeq ($(DEB_HOST_ARCH_CPU), amd64)
 	CONFARGS += enable-ec_nistp_64_gcc_128
 endif
 
+export OPENSSL_CONF=$(shell pwd)/apps/openssl.cnf
 MAKE_TEST = make test
 ifneq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
 	MAKE_TEST = :

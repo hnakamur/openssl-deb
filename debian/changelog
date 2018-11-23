@@ -1,3 +1,9 @@
+openssl1.0 (1.0.2q-2) unstable; urgency=medium
+
+  * User openssl.cnf from the build directory for the testsuite.
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 24 Nov 2018 13:02:13 +0100
+
 openssl1.0 (1.0.2q-1) unstable; urgency=medium
 
   * Correct typo in the riscv64 target (Closes: #891799).
