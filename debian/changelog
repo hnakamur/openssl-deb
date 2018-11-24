@@ -1,11 +1,11 @@
-openssl (1.1.0j-1~deb9u1) UNRELEASED; urgency=medium
+openssl (1.1.0j-1~deb9u1) stretch; urgency=medium
 
   * Import 1.1.0j
     - CVE-2018-0734 (Timing vulnerability in DSA signature generation)
     - CVE-2018-0735 (Timing vulnerability in ECDSA signature generation)
     - add new symbols
 
- -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 24 Nov 2018 21:58:14 +0100
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 24 Nov 2018 22:14:49 +0100
 
 openssl (1.1.0i-1~deb9u1) stretch; urgency=medium
 
