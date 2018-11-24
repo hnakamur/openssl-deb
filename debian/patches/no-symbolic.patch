@@ -7,7 +7,7 @@ Subject: no-symbolic
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Makefile.shared b/Makefile.shared
-index 4f9550a..63f7e59 100644
+index 4f9550aaf18c..63f7e595d94b 100644
 --- a/Makefile.shared
 +++ b/Makefile.shared
 @@ -154,7 +154,7 @@ LINK_SO_SHLIB_UNPACKED=	\

@@ -1,8 +1,19 @@
+openssl (1.1.0j-1~deb9u1) UNRELEASED; urgency=medium
+
+  * Import 1.1.0j
+    - CVE-2018-0734 (Timing vulnerability in DSA signature generation)
+    - CVE-2018-0735 (Timing vulnerability in ECDSA signature generation)
+    - add new symbols
+
+ -- Sebastian Andrzej Siewior <sebastian@breakpoint.cc>  Sat, 24 Nov 2018 21:58:14 +0100
+
 openssl (1.1.0i-1~deb9u1) stretch; urgency=medium
 
   * Import 1.1.0i
     - Fix segfault ERR_clear_error (Closes: #903566)
     - Fix commandline option for CAengine (Closes: #907457)
+    - CVE-2018-0732 (Client DoS due to large DH parameter)
+    - CVE-2018-0737 (Cache timing vulnerability in RSA Key Generation)
   * Abort the build if symbols are discovered which are not part of the
     symbols file.
   * use signing-key.asc and a https links for downloads

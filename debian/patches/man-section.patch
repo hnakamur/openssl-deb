@@ -8,7 +8,7 @@ Subject: man-section
  2 files changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/Configurations/unix-Makefile.tmpl b/Configurations/unix-Makefile.tmpl
-index 034d93e..9af91c6 100644
+index 7254478af547..5a8644435832 100644
 --- a/Configurations/unix-Makefile.tmpl
 +++ b/Configurations/unix-Makefile.tmpl
 @@ -167,7 +167,8 @@ HTMLDIR=$(DOCDIR)/html
@@ -21,7 +21,7 @@ index 034d93e..9af91c6 100644
  HTMLSUFFIX=html
  
  
-@@ -562,7 +563,8 @@ uninstall_docs: uninstall_man_docs uninstall_html_docs
+@@ -573,7 +574,8 @@ uninstall_runtime: uninstall_programs uninstall_runtime_libs
  	@[ -n "$(INSTALLTOP)" ] || (echo INSTALLTOP should not be empty; exit 1)
  	@echo "*** Installing manpages"
  	$(PERL) $(SRCDIR)/util/process_docs.pl \
@@ -32,7 +32,7 @@ index 034d93e..9af91c6 100644
  uninstall_man_docs:
  	@echo "*** Uninstalling manpages"
 diff --git a/util/process_docs.pl b/util/process_docs.pl
-index f7daef0..5209c3e 100755
+index f7daef0dd896..5209c3e286a0 100755
 --- a/util/process_docs.pl
 +++ b/util/process_docs.pl
 @@ -38,6 +38,7 @@ GetOptions(\%options,
