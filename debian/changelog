@@ -1,3 +1,9 @@
+openssl (1.1.1b-1ubuntu1ppa1~18.04.1) bionic; urgency=medium
+
+  * Backport to Ubuntu 18.04 LTS
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Wed, 27 Feb 2019 17:28:02 +0900
+
 openssl (1.1.1b-1) unstable; urgency=medium
 
   [ Sebastian Andrzej Siewior ]
